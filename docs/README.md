@@ -2,9 +2,13 @@
 
 ![](https://img.shields.io/badge/version-v2.0.0-green.svg) ![](https://img.shields.io/badge/author-Hollis-yellow.svg) ![](https://img.shields.io/badge/license-GPL-blue.svg)
 
+成神之路系列丛书的第一本《深入理解Java核心技术（基础篇）》已经正式出版了，这本书囊括了<Java工程师成神之路>中基础篇的几乎全部内容，欢迎大家购买品鉴。
+
+![](docs/contact/book.jpeg)
 
 | 主要版本 | 更新时间       | 备注             |
 | ---- | ---------- | -------------- |
+| v4.0 | 2022-05-20 | 知识体系完善，知识点补充|
 | v3.0 | 2020-03-31 | 知识体系完善，在v2.0的基础上，新增20%左右的知识点<br>调整部分知识的顺序及结构，方便阅读和理解<br>通过GitHub Page搭建，便于阅读|
 | v2.0 | 2019-02-19 | 结构调整，更适合从入门到精通；<br>进一步完善知识体系； <br>新技术补充；|
 | v1.1 | 2018-03-12 | 增加新技术知识、完善知识体系 |
@@ -14,6 +18,14 @@
 目前正在更新中... 
 
 欢迎大家参与共建~
+
+### 联系我们
+
+欢迎关注作者的公众号，可以直接后台留言。
+
+![](contact/wechat-hollis.jpg)
+
+*公众号后台回复："成神导图"，即可获取《Java工程师成神之路最新版思维导图》* 
 
 ### 关于作者
 
@@ -43,12 +55,6 @@ GitHub Pages 完整阅读：[进入](https://hollischuang.github.io/toBeTopJavae
 
 Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) (国内访问速度较快)
 
-### 联系我们
 
-欢迎关注作者的公众号，可以直接后台留言。
-
-![](contact/wechat-hollis.jpg)
-
-如果获取《Java工程师成神之路最新版思维导图》，请在公众号后台回复："成神导图"
 
 ### <a href="#/menu?id=目录">开始阅读</a></p></div><div class="mask"></div></section>

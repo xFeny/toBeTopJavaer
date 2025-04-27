@@ -15,9 +15,9 @@ HashMap类中有以下主要成员变量：
 *   transient int size; 
     *   记录了Map中KV对的个数
 *   loadFactor 
-    *   装载印子，用来衡量HashMap满的程度。loadFactor的默认值为0.75f（`static final float DEFAULT_LOAD_FACTOR = 0.75f;`）。
+    *   装载因子，用来衡量HashMap满的程度。loadFactor的默认值为0.75f（`static final float DEFAULT_LOAD_FACTOR = 0.75f;`）。
 *   int threshold; 
-    *   临界值，当实际KV个数超过threshold时，HashMap会将容量扩容，threshold＝容量*加载因子
+    *   临界值，当实际KV个数超过threshold时，HashMap会将容量扩容，threshold＝容量*装载因子
 *   除了以上这些重要成员变量外，HashMap中还有一个和他们紧密相关的概念：capacity 
     *   容量，如果不指定，默认容量是16(`static final int DEFAULT_INITIAL_CAPACITY = 1 << 4;`)
 
@@ -71,7 +71,7 @@ HashMap中的size和capacity之间的区别其实解释起来也挺简单的。�
         System.out.println("capacity : " + capacity.invoke(map));
     
 
-分别执行以上3段代码，分别输出：**capacity : 2、capacity : 8、capacity : 16**。
+分别执行以上3段代码，分别输出：**capacity : 1、capacity : 8、capacity : 16**。
 
 也就是说，默认情况下HashMap的容量是16，但是，如果用户通过构造函数指定了一个数字作为容量，那么Hash会选择大于该数字的第一个2的幂作为容量。(1->1、7->8、9->16)
 

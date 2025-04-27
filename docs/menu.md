@@ -2,9 +2,13 @@
 
 ![](https://img.shields.io/badge/version-v2.0.0-green.svg) ![](https://img.shields.io/badge/author-Hollis-yellow.svg) ![](https://img.shields.io/badge/license-GPL-blue.svg)
 
+成神之路系列丛书的第一本《深入理解Java核心技术（基础篇）》已经正式出版了，这本书囊括了<Java工程师成神之路>中基础篇的几乎全部内容，欢迎大家购买品鉴。
+
+![](contact/book.jpeg)
 
 | 主要版本 | 更新时间       | 备注             |
 | ---- | ---------- | -------------- |
+| v4.0 | 2022-05-20 | 知识体系完善，知识点补充|
 | v3.0 | 2020-03-31 | 知识体系完善，在v2.0的基础上，新增20%左右的知识点<br>调整部分知识的顺序及结构，方便阅读和理解<br>通过GitHub Page搭建，便于阅读|
 | v2.0 | 2019-02-19 | 结构调整，更适合从入门到精通；<br>进一步完善知识体系； <br>新技术补充；|
 | v1.1 | 2018-03-12 | 增加新技术知识、完善知识体系 |
@@ -14,6 +18,15 @@
 目前正在更新中... 
 
 欢迎大家参与共建~
+
+### 联系我们
+
+欢迎关注作者的公众号，可以直接后台留言。
+
+![](contact/wechat-hollis.jpg)
+
+*公众号后台回复："成神导图"，即可获取《Java工程师成神之路最新版思维导图》* 
+
 
 ### 关于作者
 
@@ -43,14 +56,6 @@ GitHub Pages 完整阅读：[进入](https://hollischuang.github.io/toBeTopJavae
 
 Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) (国内访问速度较快)
 
-### 联系我们
-
-欢迎关注作者的公众号，可以直接后台留言。
-
-![](contact/wechat-hollis.jpg)
-
-如果获取《Java工程师成神之路最新版思维导图》，请在公众号后台回复："成神导图"
-
 
 ### 目录
 
@@ -73,6 +78,8 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             * [方法重写与重载](/basics/object-oriented/overloading-vs-overriding.md)
             
             * [Java的继承与实现](/basics/object-oriented/extends-implement.md)
+            
+            * [Java为什么不支持多继承](/basics/object-oriented/multiple-inheritance.md)
         
             * [Java的继承与组合](/basics/object-oriented/inheritance-composition.md)
         
@@ -127,32 +134,38 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             * [String对“+”的重载](/basics/java-basic/string-append.md)
 
             * [字符串拼接的几种方式和区别](/basics/java-basic/string-concat.md)
+            
+            * [Java 8中的StringJoiner](/basics/java-basic/stringjoiner-in-java8.md)
 
             * [String.valueOf和Integer.toString的区别](/basics/java-basic/value-of-vs-to-string.md)
 
             * [switch对String的支持](/basics/java-basic/switch-string.md)
             
-            * 字符串池
+            * [字符串池](/basics/java-basic/string-pool.md)
             
-            * 常量池（运行时常量池、[Class常量池](/basics/java-basic/class-contant-pool.md)）
+            * [Class常量池](/basics/java-basic/class-contant-pool.md)
             
-            * intern
+            * [运行时常量池](/basics/java-basic/Runtime-Constant-Pool.md)
+            
+            * [intern](/basics/java-basic/intern.md)
+            
+            * [String有没有长度限制？](/basics/java-basic/length-of-string.md)
             
         * Java中各种关键字
         
-            * transient
+            * [transient](basics/java-basic/transient-in-java.md)
             
-            * instanceof
+            * [instanceof](basics/java-basic/instanceof-in-java.md)
             
-            * volatile
+            * [volatile](basics/concurrent-coding/volatile.md)
             
-            * synchronized
+            * [synchronized](basics/concurrent-coding/synchronized.md)
             
-            * final
+            * [final](basics/java-basic/final-in-java.md)
             
-            * static
+            * [static](basics/java-basic/static-in-java.md)
             
-            * const 
+            * [const](basics/java-basic/const-in-java.md)
             
         * 集合类
         
@@ -162,7 +175,9 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [Set和List区别？](/basics/java-basic/set-vs-list.md)
         
-            * [ArrayList和LinkedList和Vector的区别](/basics/java-basic/arraylist-vs-linkedlist-vs-vector.md) 
+            * [ArrayList和LinkedList和Vector的区别](/basics/java-basic/arraylist-vs-linkedlist-vs-vector.md)
+            
+            * [ArrayList使用了transient关键字进行存储优化，而Vector没有，为什么？](/basics/java-basic/why-transient-in-arraylist.md) 
             
             * [SynchronizedList和Vector的区别](/basics/java-basic/synchronizedlist-vector.md)
             
@@ -210,7 +225,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [枚举与单例](/basics/java-basic/enum-singleton.md)
             
-            * Enum类
+            * [Enum类](/basics/java-basic/enum-class.md)
             
             * [Java枚举如何比较](/basics/java-basic/enum-compare.md)
             
@@ -219,6 +234,8 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             * [枚举的序列化如何实现](/basics/java-basic/enum-serializable.md)
             
             * [枚举的线程安全性问题](/basics/java-basic/enum-thread-safe.md)
+            
+            * [为什么不建议在对外接口中使用枚举](/basics/java-basic/stop-use-enum-in-api.md)
             
         * IO
             
@@ -236,15 +253,17 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [BIO、NIO和AIO的区别、三种IO的用法与原理](/basics/java-basic/bio-vs-nio-vs-aio.md)
             
-            * netty
+            * [netty](/basics/java-basic/netty.md)
             
         * 反射
         
-            * [反射](/basics/java-basic/reflection.md)与工厂模式、 
+            * [反射](/basics/java-basic/reflection.md)
         
             * [反射有什么作用](/basics/java-basic/usage-of-reflection.md)
         
             * [Class类](/basics/java-basic/Class.md)
+            
+            * [反射与工厂模式实现Spring IOC](/basics/java-basic/ioc-implement-with-factory-and-reflection.md)
         
             * `java.lang.reflect.*`
             
@@ -274,7 +293,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
            
            * [为什么serialVersionUID不能随便改](basics/java-basic/serialVersionUID-modify.md)
            
-           * [transient](basics/java-basic/transient.md)
+           * [transient](basics/java-basic/transient-in-java.md)
            
            * [序列化底层原理](basics/java-basic/serialize-principle.md)
            
@@ -282,7 +301,9 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
            
            * [protobuf](basics/java-basic/protobuf.md)
            
-           * 为什么说序列化并不安全
+           * [Apache-Commons-Collections的反序列化漏洞](basics/java-basic/bug-in-apache-commons-collections.md)
+           
+           * [fastjson的反序列化漏洞](basics/java-basic/bug-in-fastjson.md)
            
         * 注解
            
@@ -302,7 +323,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [什么是泛型](/basics/java-basic/generics.md)
             
-            * [类型擦除](/basics/java-basic/type-erasue.md)
+            * [类型擦除](/basics/java-basic/type-erasure.md)
             
             * [泛型带来的问题](/basics/java-basic/generics-problem.md)
             
@@ -320,13 +341,13 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
         * 单元测试
             
-            * junit
+            * [junit](/basics/java-basic/junit.md)
             
             * junit 和Spring 的结合
             
             * [mock](/basics/java-basic/mock.md)
             
-            * [mockito](/basics/java-basic/ut-with-mockito.md)
+            * [JMockit](/basics/java-basic/ut-with-jmockit.md)
             
             * [内存数据库（h2）](/basics/java-basic/h2-db.md)
             
@@ -394,6 +415,8 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [yyyy和YYYY有什么区别？](/basics/java-basic/YYYY-vs-yyyy.md)
             
+            * 为什么日期格式化时必须有使用y表示年，而不能用Y？ 
+            
         * 编码方式
             
             * [什么是ASCII？](/basics/java-basic/ASCII.md)
@@ -431,6 +454,14 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             * java.lang.management.* 
             
             * javax.management.*
+            
+        * BigDecimal
+            
+            * 为什么0.1+0.2不等于0.3
+            
+            * [为什么不能使用BigDecimal的equals比较大小](/basics/java-basic/stop-using-equlas-in-bigdecimal.md)
+            
+            * [为什么不能直接使用double创建一个BigDecimal](/basics/java-basic/stop-create-bigdecimal-with-double.md)
             
         * Java 8
             
@@ -474,29 +505,31 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
         * 线程
         
-            * 线程与进程的区别
+            * [线程与进程的区别](/basics/concurrent-coding/progress-vs-thread.md)
             
-            * 线程的实现
+            * [线程的特点](/basics/concurrent-coding/thread.md)
             
-            * 线程的状态
+            * [线程的实现](/basics/concurrent-coding/implement-of-thread.md)
             
-            * 线程优先级
+            * [线程的状态](/basics/concurrent-coding/state-of-thread.md)
             
-            * 线程调度
+            * [线程优先级](/basics/concurrent-coding/priority-of-thread.md)
             
-            * 多线程如何Debug
+            * [线程调度](/basics/concurrent-coding/thread-scheduling.md)
             
-            * 守护线程
+            * [多线程如何Debug](/basics/concurrent-coding/debug-in-multithread.md)
+            
+            * [守护线程](/basics/concurrent-coding/deamon-thread.md)
             
         * 创建线程的多种方式
             
-            * 继承Thread类创建线程
+            * [继承Thread类创建线程](/basics/concurrent-coding/create-thread-with-extends.md)
             
-            * 实现Runnable接口创建线程
+            * [实现Runnable接口创建线程](/basics/concurrent-coding/create-thread-with-Implement.md)
             
-            * 通过Callable和FutureTask创建线程
+            * [通过Callable和FutureTask创建线程](/basics/concurrent-coding/create-thread-with-callback-future-task.md)
             
-            * 通过线程池创建线程
+            * [通过线程池创建线程](/basics/concurrent-coding/create-thread-with-thead-pool.md)
             
         * 线程池
             
@@ -506,11 +539,11 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * 线程池原理
             
-            * 为什么不允许使用Executors创建线程池
+            * [为什么不允许使用Executors创建线程池](/basics/concurrent-coding/why-not-executors.md)
             
         * 线程安全
         
-            * 什么是线程安全
+            * [什么是线程安全](/basics/concurrent-coding/thread-safe.md)
             
             * 多级缓存和一致性问题
             
@@ -646,11 +679,13 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * 运行时数据区
             
-            * 运行时数据区哪些是线程独享
+            * [运行时数据区哪些是线程独享](/basement/jvm/exclusive-in-runtime-area.md)
             
             * 堆和栈区别
             
             * 方法区在不同版本JDK中的位置
+            
+            * [运行时常量池](/basics/java-basic/Runtime-Constant-Pool.md)
             
             * 堆外内存
               
@@ -760,9 +795,27 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         
         * 类加载过程
         
-        * 双亲委派（破坏双亲委派）
+        * 如何判断JVM中类和其他类是不是同一个类
         
-        * 模块化（jboss modules、osgi、jigsaw）
+        * [双亲委派原则](/basement/jvm/parents-delegate.md)
+        
+        * [为什么需要双亲委派？](/basement/jvm/why-parents-delegate.md)
+        
+        * [“父子加载器”之间的关系是继承吗？](/basement/jvm/relation-with-parents-delegate.md)
+        
+        * [双亲委派是如何实现的？](/basement/jvm/implements-of-parents-delegate.md)
+        
+        * [如何打破双亲委派](/basement/jvm/ibreak-parants-delegate.md)
+        
+        * [如何自定义类加载器](/basement/jvm/define-class-loader.md)
+        
+        * [双亲委派被破坏的例子](/basement/jvm/sample-of-break-parents-delegate.md)
+        
+        * [为什么JNDI，JDBC等需要破坏双亲委派？](/basement/jvm/spi-parents-delegate.md)
+        
+        * [为什么Tomcat要破坏双亲委派](/basement/jvm/tomcat-parents-delegate.md)
+        
+        * [模块化（jboss modules、osgi、jigsaw）](/basement/jvm/moduler.md)
         
     * 打包工具
         
@@ -777,6 +830,8 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         * 什么是编译
         
         * 什么是反编译
+        
+        * [Class常量池](/basics/java-basic/class-contant-pool.md)
         
         * 编译工具：javac
                 
@@ -952,7 +1007,11 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         
             * 用Java写一个简单的静态文件的HTTP服务器
             
-        * http/2
+        * HTTP/2
+            
+            * HTTP/2 存在哪些问题？
+            
+        * HTTP/3
         
         * Java RMI，Socket，HttpClient
                 
@@ -1030,9 +1089,13 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * AOP原理
             
+            * Spring AOP不支持方法自调用的问题
+            
             * 实现Spring的IOC
             
             * spring四种依赖注入方式
+            
+            * 为什么我不建议使用@Transactional声明事务 
             
         * Spring MVC
             
@@ -1289,6 +1352,10 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
           
             * find、grep、ps、cp、move、tar、head、tail、netstat、lsof、tree、wget、curl、ping、ssh、echo、free、top
             
+            * 为什么kill -9 不能随便执行
+            
+            * rm一个被打开的文件会发生什么
+            
         * 进程间通信
         
         * 服务器性能指标
@@ -1414,6 +1481,10 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             * redis
             
             * memcached
+            
+        * Redis
+        
+            * Redis多线程 
             
         * 分别使用数据库锁、NoSql实现分布式锁
             
@@ -1757,6 +1828,12 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             * 主主复制
     
         * 异地多活
+        
+        * 预案
+        
+        * 预热
+        
+        * 限流
     
     * 高性能
     
@@ -1930,4 +2007,4 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         
         * Swift
         
-        * Rust       
+        * Rust
